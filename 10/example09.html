@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+        position: relative;
+        transition: all 1s ease 0s;
+        transform-style: preserve-3d;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateZ(100px);
+      }
+      .no2 {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      div:hover {
+        transform: rotateX(-90deg);
+      }
+      div:visited {
+        transform: rotateX(-90deg);
+        transition: all 1s ease 0s;
+        transform-style: preserve-3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="1.png" alt="1" class="no1" />
+      <img src="2.png" alt="2" class="no2" />
+    </div>
+  </body>
+</html>

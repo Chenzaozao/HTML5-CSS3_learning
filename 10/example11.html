@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 150px;
+            border-radius: 50%;
+            background: #F60;
+            animation-name: mymove;
+            animation-duration: 8s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+        @keyframes mymove {
+            from{transform: translate(0) rotateZ(0deg);}
+            to{transform: translate(1000px) rotateZ(1080deg);}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
